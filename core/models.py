@@ -1,3 +1,4 @@
+from sys import setdlopenflags
 from tabnanny import verbose
 from django.db import models
 from stdimage.models import StdImageField
@@ -74,3 +75,14 @@ class Features(Base):
 
     def __str__(self) :
         return self.servico
+
+class Sobre(Base):
+    estatistica = models.CharField('Estatísticas', max_length=100)
+    infromacao = models.TextField('Informações', max_length=250)
+
+    class Meta:
+        verbose_name = 'Sobre'
+    
+    def __str__(self):
+        return self.estatistica
+
