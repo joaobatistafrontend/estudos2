@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jhrqj#a7q-2i0s4^rbl^x3-@q2@3myq+*#_s0_+gx0l4t=102%'
+SECRET_KEY = 'django-insecure-^i&qltmf_f^n@l^u)q!fm=q^#itcl80cl4--eye4a#w!7(ll*s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'core',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -118,10 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 import os
 STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+STATIC_MEDIA = 'media/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
